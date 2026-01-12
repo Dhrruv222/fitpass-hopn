@@ -114,6 +114,7 @@ export default function LoginPage() {
           </Link>
           <h2 className="text-3xl font-bold text-gray-900 mb-2">{t('auth.login.title')}</h2>
           <p className="text-gray-600 text-lg">{t('auth.login.subtitle')}</p>
+          {/* v1.0.1 - Updated {new Date().toISOString()} */}
         </div>
 
         <Card className="animate-fadeInUp shadow-xl border-2 border-gray-100" style={{ animationDelay: '0.1s' }}>
