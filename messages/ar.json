@@ -1,0 +1,264 @@
+{
+  "common": {
+    "language": "اللغة",
+    "english": "English",
+    "arabic": "العربية",
+    "login": "تسجيل الدخول",
+    "logout": "تسجيل الخروج",
+    "register": "التسجيل",
+    "email": "البريد الإلكتروني",
+    "password": "كلمة المرور",
+    "name": "الاسم",
+    "submit": "إرسال",
+    "cancel": "إلغاء",
+    "save": "حفظ",
+    "edit": "تعديل",
+    "delete": "حذف",
+    "search": "بحث",
+    "filter": "تصفية",
+    "loading": "جاري التحميل...",
+    "error": "خطأ",
+    "success": "نجح",
+    "viewDetails": "عرض التفاصيل",
+    "close": "إغلاق",
+    "download": "تحميل",
+    "back": "رجوع",
+    "next": "التالي",
+    "previous": "السابق",
+    "all": "الكل",
+    "active": "نشط",
+    "inactive": "غير نشط",
+    "pending": "قيد الانتظار",
+    "approved": "موافق عليه",
+    "rejected": "مرفوض",
+    "suspended": "معلق"
+  },
+  "nav": {
+    "home": "الرئيسية",
+    "pricing": "الأسعار",
+    "partners": "الشركاء",
+    "about": "من نحن",
+    "faq": "الأسئلة الشائعة",
+    "contact": "اتصل بنا",
+    "dashboard": "لوحة التحكم",
+    "profile": "الملف الشخصي",
+    "logout": "تسجيل الخروج"
+  },
+  "home": {
+    "title": "عضوية العافية أصبحت بسيطة",
+    "subtitle": "الوصول إلى الصالات الرياضية المتميزة والمنتجعات الصحية ومراكز العافية في جميع أنحاء المنطقة بعضوية واحدة",
+    "cta": "ابدأ الآن",
+    "features": {
+      "title": "لماذا تختار HOPn",
+      "flexibility": {
+        "title": "المرونة",
+        "description": "اختر من بين مستويات متعددة تناسب أسلوب حياتك"
+      },
+      "variety": {
+        "title": "تشكيلة واسعة",
+        "description": "الوصول إلى مئات الصالات الرياضية والمنتجعات الصحية ومراكز العافية"
+      },
+      "convenience": {
+        "title": "الراحة",
+        "description": "تسجيل الدخول برمز الاستجابة السريعة يجعل الوصول إلى الشركاء سهلاً"
+      }
+    }
+  },
+  "pricing": {
+    "title": "اختر خطتك",
+    "subtitle": "اختر المستوى المثالي لرحلة العافية الخاصة بك",
+    "perMonth": "/شهر",
+    "bronze": {
+      "name": "البرونزية",
+      "description": "مثالي للبدء في العافية"
+    },
+    "silver": {
+      "name": "الفضية",
+      "description": "توازن رائع بين القيمة والتنوع"
+    },
+    "gold": {
+      "name": "الذهبية",
+      "description": "الوصول المتميز لجميع المرافق"
+    },
+    "clubPlus": {
+      "name": "النادي+",
+      "description": "وصول غير محدود للنوادي الحصرية"
+    },
+    "digital": {
+      "name": "الرقمية",
+      "description": "دروس عبر الإنترنت ومحتوى العافية"
+    }
+  },
+  "partners": {
+    "title": "اكتشف الشركاء",
+    "subtitle": "ابحث عن الصالات الرياضية والمنتجعات الصحية ومراكز العافية بالقرب منك",
+    "filters": {
+      "city": "المدينة",
+      "type": "النوع",
+      "allCities": "كل المدن",
+      "allTypes": "كل الأنواع"
+    },
+    "types": {
+      "gym": "صالة رياضية",
+      "spa": "منتجع صحي",
+      "club": "نادي",
+      "digital": "رقمي"
+    },
+    "openHours": "ساعات العمل",
+    "rating": "التقييم",
+    "viewOnMap": "عرض على الخريطة"
+  },
+  "auth": {
+    "login": {
+      "title": "مرحبا بعودتك",
+      "subtitle": "تسجيل الدخول إلى حسابك",
+      "forgotPassword": "هل نسيت كلمة المرور؟",
+      "noAccount": "ليس لديك حساب؟",
+      "signUp": "سجل"
+    },
+    "register": {
+      "title": "إنشاء حساب",
+      "subtitle": "انضم إلى HOPn اليوم",
+      "companyCode": "رمز الشركة (اختياري)",
+      "hasAccount": "هل لديك حساب بالفعل؟",
+      "signIn": "تسجيل الدخول"
+    },
+    "forgotPassword": {
+      "title": "إعادة تعيين كلمة المرور",
+      "subtitle": "أدخل بريدك الإلكتروني لتلقي تعليمات إعادة التعيين",
+      "backToLogin": "العودة لتسجيل الدخول"
+    },
+    "resetPassword": {
+      "title": "تعيين كلمة مرور جديدة",
+      "newPassword": "كلمة المرور الجديدة",
+      "confirmPassword": "تأكيد كلمة المرور"
+    }
+  },
+  "app": {
+    "dashboard": {
+      "title": "لوحة التحكم",
+      "welcome": "مرحبا",
+      "myPlan": "خطتي",
+      "generateQR": "إنشاء رمز تسجيل الدخول",
+      "recentCheckIns": "عمليات تسجيل الدخول الأخيرة",
+      "recommendedPartners": "الشركاء الموصى بهم",
+      "validity": "صالح حتى",
+      "checkInsUsed": "عمليات تسجيل الدخول المستخدمة",
+      "checkInsRemaining": "عمليات تسجيل الدخول المتبقية"
+    },
+    "qr": {
+      "title": "رمز تسجيل الدخول",
+      "subtitle": "أظهر هذا الرمز في موقع الشريك",
+      "expiresIn": "ينتهي في",
+      "expired": "انتهت صلاحية الرمز",
+      "generateNew": "إنشاء رمز جديد"
+    },
+    "partners": {
+      "title": "تصفح الشركاء",
+      "subtitle": "اكتشف مراكز العافية التي يمكنك زيارتها"
+    },
+    "bookings": {
+      "title": "حجوزاتي",
+      "subtitle": "عرض وإدارة حجوزاتك",
+      "noBookings": "لا توجد حجوزات بعد"
+    },
+    "profile": {
+      "title": "ملفي الشخصي",
+      "personalInfo": "المعلومات الشخصية",
+      "preferences": "التفضيلات",
+      "language": "اللغة"
+    }
+  },
+  "company": {
+    "employees": {
+      "title": "الموظفون",
+      "addEmployee": "إضافة موظف",
+      "inviteEmployee": "دعوة موظف",
+      "employeeName": "اسم الموظف",
+      "employeeEmail": "البريد الإلكتروني للموظف",
+      "status": "الحالة",
+      "plan": "الخطة",
+      "assignPlan": "تعيين خطة",
+      "deactivate": "إلغاء التفعيل",
+      "invited": "مدعو",
+      "actions": "الإجراءات"
+    },
+    "plans": {
+      "title": "الخطط",
+      "availablePlans": "الخطط المتاحة",
+      "employees": "الموظفون"
+    },
+    "usage": {
+      "title": "تحليلات الاستخدام",
+      "checkIns": "تسجيلات الدخول",
+      "lastCheckIn": "آخر تسجيل دخول",
+      "dateRange": "نطاق التاريخ",
+      "last7Days": "آخر 7 أيام",
+      "last30Days": "آخر 30 يومًا",
+      "last90Days": "آخر 90 يومًا",
+      "totalCheckIns": "إجمالي تسجيلات الدخول"
+    },
+    "invoices": {
+      "title": "الفواتير",
+      "invoiceNumber": "رقم الفاتورة",
+      "date": "التاريخ",
+      "amount": "المبلغ",
+      "status": "الحالة",
+      "downloadPDF": "تحميل PDF"
+    }
+  },
+  "admin": {
+    "companies": {
+      "title": "الشركات",
+      "addCompany": "إضافة شركة",
+      "companyName": "اسم الشركة",
+      "companyCode": "رمز الشركة",
+      "adminEmail": "البريد الإلكتروني للمسؤول",
+      "billingDetails": "تفاصيل الفواتير",
+      "createCompany": "إنشاء شركة"
+    },
+    "plans": {
+      "title": "الخطط",
+      "addPlan": "إضافة خطة",
+      "editPlan": "تعديل الخطة",
+      "tierName": "اسم المستوى",
+      "monthlyPrice": "السعر الشهري",
+      "checkInsPerMonth": "تسجيلات الدخول في الشهر",
+      "includedCategories": "الفئات المشمولة",
+      "notes": "ملاحظات"
+    },
+    "partners": {
+      "title": "الشركاء",
+      "addPartner": "إضافة شريك",
+      "partnerName": "اسم الشريك",
+      "type": "النوع",
+      "city": "المدينة",
+      "address": "العنوان",
+      "coordinates": "الإحداثيات",
+      "latitude": "خط العرض",
+      "longitude": "خط الطول",
+      "approve": "موافقة",
+      "reject": "رفض",
+      "suspend": "تعليق"
+    },
+    "analytics": {
+      "title": "التحليلات",
+      "totalCheckIns": "إجمالي تسجيلات الدخول",
+      "activeUsers": "المستخدمون النشطون",
+      "activeCompanies": "الشركات النشطة",
+      "checkInsOverTime": "تسجيلات الدخول مع مرور الوقت"
+    }
+  },
+  "validation": {
+    "required": "هذا الحقل مطلوب",
+    "invalidEmail": "عنوان بريد إلكتروني غير صالح",
+    "passwordMin": "يجب أن تكون كلمة المرور 8 أحرف على الأقل",
+    "passwordMatch": "يجب أن تتطابق كلمات المرور"
+  },
+  "errors": {
+    "generic": "حدث خطأ ما. يرجى المحاولة مرة أخرى.",
+    "unauthorized": "غير مصرح لك بتنفيذ هذا الإجراء",
+    "notFound": "المورد غير موجود",
+    "networkError": "خطأ في الشبكة. يرجى التحقق من اتصالك."
+  }
+}

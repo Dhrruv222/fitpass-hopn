@@ -1,0 +1,14 @@
+# Fitpass HOPn - Production Ready
+# Deployed: [Date]
+# Stack: Next.js 14 + TypeScript + TailwindCSS
+
+*.log
+.DS_Store
+node_modules/
+.next/
+out/
+.env*.local
+.env
+.vercel
+*.tsbuildinfo
+next-env.d.ts

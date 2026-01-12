@@ -1,0 +1,264 @@
+{
+  "common": {
+    "language": "Language",
+    "english": "English",
+    "arabic": "العربية",
+    "login": "Login",
+    "logout": "Logout",
+    "register": "Register",
+    "email": "Email",
+    "password": "Password",
+    "name": "Name",
+    "submit": "Submit",
+    "cancel": "Cancel",
+    "save": "Save",
+    "edit": "Edit",
+    "delete": "Delete",
+    "search": "Search",
+    "filter": "Filter",
+    "loading": "Loading...",
+    "error": "Error",
+    "success": "Success",
+    "viewDetails": "View Details",
+    "close": "Close",
+    "download": "Download",
+    "back": "Back",
+    "next": "Next",
+    "previous": "Previous",
+    "all": "All",
+    "active": "Active",
+    "inactive": "Inactive",
+    "pending": "Pending",
+    "approved": "Approved",
+    "rejected": "Rejected",
+    "suspended": "Suspended"
+  },
+  "nav": {
+    "home": "Home",
+    "pricing": "Pricing",
+    "partners": "Partners",
+    "about": "About",
+    "faq": "FAQ",
+    "contact": "Contact",
+    "dashboard": "Dashboard",
+    "profile": "Profile",
+    "logout": "Logout"
+  },
+  "home": {
+    "title": "Wellness Membership Made Simple",
+    "subtitle": "Access premium gyms, spas, and wellness centers across the region with a single membership",
+    "cta": "Get Started",
+    "features": {
+      "title": "Why Choose HOPn",
+      "flexibility": {
+        "title": "Flexibility",
+        "description": "Choose from multiple tiers that fit your lifestyle"
+      },
+      "variety": {
+        "title": "Wide Selection",
+        "description": "Access hundreds of gyms, spas, and wellness centers"
+      },
+      "convenience": {
+        "title": "Convenience",
+        "description": "QR code check-in makes accessing partners effortless"
+      }
+    }
+  },
+  "pricing": {
+    "title": "Choose Your Plan",
+    "subtitle": "Select the perfect tier for your wellness journey",
+    "perMonth": "/month",
+    "bronze": {
+      "name": "Bronze",
+      "description": "Perfect for getting started with wellness"
+    },
+    "silver": {
+      "name": "Silver",
+      "description": "Great balance of value and variety"
+    },
+    "gold": {
+      "name": "Gold",
+      "description": "Premium access to all facilities"
+    },
+    "clubPlus": {
+      "name": "Club+",
+      "description": "Unlimited access to exclusive clubs"
+    },
+    "digital": {
+      "name": "Digital",
+      "description": "Online classes and wellness content"
+    }
+  },
+  "partners": {
+    "title": "Discover Partners",
+    "subtitle": "Find gyms, spas, and wellness centers near you",
+    "filters": {
+      "city": "City",
+      "type": "Type",
+      "allCities": "All Cities",
+      "allTypes": "All Types"
+    },
+    "types": {
+      "gym": "Gym",
+      "spa": "Spa",
+      "club": "Club",
+      "digital": "Digital"
+    },
+    "openHours": "Open Hours",
+    "rating": "Rating",
+    "viewOnMap": "View on Map"
+  },
+  "auth": {
+    "login": {
+      "title": "Welcome Back",
+      "subtitle": "Login to your account",
+      "forgotPassword": "Forgot Password?",
+      "noAccount": "Don't have an account?",
+      "signUp": "Sign up"
+    },
+    "register": {
+      "title": "Create Account",
+      "subtitle": "Join HOPn today",
+      "companyCode": "Company Code (optional)",
+      "hasAccount": "Already have an account?",
+      "signIn": "Sign in"
+    },
+    "forgotPassword": {
+      "title": "Reset Password",
+      "subtitle": "Enter your email to receive reset instructions",
+      "backToLogin": "Back to Login"
+    },
+    "resetPassword": {
+      "title": "Set New Password",
+      "newPassword": "New Password",
+      "confirmPassword": "Confirm Password"
+    }
+  },
+  "app": {
+    "dashboard": {
+      "title": "Dashboard",
+      "welcome": "Welcome",
+      "myPlan": "My Plan",
+      "generateQR": "Generate QR Check-in",
+      "recentCheckIns": "Recent Check-ins",
+      "recommendedPartners": "Recommended Partners",
+      "validity": "Valid Until",
+      "checkInsUsed": "Check-ins Used",
+      "checkInsRemaining": "Check-ins Remaining"
+    },
+    "qr": {
+      "title": "QR Check-in",
+      "subtitle": "Show this code at the partner location",
+      "expiresIn": "Expires in",
+      "expired": "Code Expired",
+      "generateNew": "Generate New Code"
+    },
+    "partners": {
+      "title": "Browse Partners",
+      "subtitle": "Discover wellness centers you can visit"
+    },
+    "bookings": {
+      "title": "My Bookings",
+      "subtitle": "View and manage your reservations",
+      "noBookings": "No bookings yet"
+    },
+    "profile": {
+      "title": "My Profile",
+      "personalInfo": "Personal Information",
+      "preferences": "Preferences",
+      "language": "Language"
+    }
+  },
+  "company": {
+    "employees": {
+      "title": "Employees",
+      "addEmployee": "Add Employee",
+      "inviteEmployee": "Invite Employee",
+      "employeeName": "Employee Name",
+      "employeeEmail": "Employee Email",
+      "status": "Status",
+      "plan": "Plan",
+      "assignPlan": "Assign Plan",
+      "deactivate": "Deactivate",
+      "invited": "Invited",
+      "actions": "Actions"
+    },
+    "plans": {
+      "title": "Plans",
+      "availablePlans": "Available Plans",
+      "employees": "Employees"
+    },
+    "usage": {
+      "title": "Usage Analytics",
+      "checkIns": "Check-ins",
+      "lastCheckIn": "Last Check-in",
+      "dateRange": "Date Range",
+      "last7Days": "Last 7 Days",
+      "last30Days": "Last 30 Days",
+      "last90Days": "Last 90 Days",
+      "totalCheckIns": "Total Check-ins"
+    },
+    "invoices": {
+      "title": "Invoices",
+      "invoiceNumber": "Invoice #",
+      "date": "Date",
+      "amount": "Amount",
+      "status": "Status",
+      "downloadPDF": "Download PDF"
+    }
+  },
+  "admin": {
+    "companies": {
+      "title": "Companies",
+      "addCompany": "Add Company",
+      "companyName": "Company Name",
+      "companyCode": "Company Code",
+      "adminEmail": "Admin Email",
+      "billingDetails": "Billing Details",
+      "createCompany": "Create Company"
+    },
+    "plans": {
+      "title": "Plans",
+      "addPlan": "Add Plan",
+      "editPlan": "Edit Plan",
+      "tierName": "Tier Name",
+      "monthlyPrice": "Monthly Price",
+      "checkInsPerMonth": "Check-ins per Month",
+      "includedCategories": "Included Categories",
+      "notes": "Notes"
+    },
+    "partners": {
+      "title": "Partners",
+      "addPartner": "Add Partner",
+      "partnerName": "Partner Name",
+      "type": "Type",
+      "city": "City",
+      "address": "Address",
+      "coordinates": "Coordinates",
+      "latitude": "Latitude",
+      "longitude": "Longitude",
+      "approve": "Approve",
+      "reject": "Reject",
+      "suspend": "Suspend"
+    },
+    "analytics": {
+      "title": "Analytics",
+      "totalCheckIns": "Total Check-ins",
+      "activeUsers": "Active Users",
+      "activeCompanies": "Active Companies",
+      "checkInsOverTime": "Check-ins Over Time"
+    }
+  },
+  "validation": {
+    "required": "This field is required",
+    "invalidEmail": "Invalid email address",
+    "passwordMin": "Password must be at least 8 characters",
+    "passwordMatch": "Passwords must match"
+  },
+  "errors": {
+    "generic": "Something went wrong. Please try again.",
+    "unauthorized": "You are not authorized to perform this action",
+    "notFound": "Resource not found",
+    "networkError": "Network error. Please check your connection."
+  }
+}
