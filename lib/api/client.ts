@@ -639,7 +639,131 @@ class RealAPI {
     });
   }
 
-  // ... implement other methods
+  async register(data: RegisterData): Promise<ApiResponse<AuthResponse>> {
+    return this.request('/auth/register', {
+      method: 'POST',
+      body: JSON.stringify(data),
+    });
+  }
+
+  async getMe(): Promise<ApiResponse<User>> {
+    return this.request('/auth/me');
+  }
+
+  async logout(): Promise<ApiResponse<void>> {
+    clearAuthTokens();
+    return { success: true, data: undefined };
+  }
+
+  async getPlans(): Promise<ApiResponse<Plan[]>> {
+    return this.request('/plans');
+  }
+
+  async getPlan(id: string): Promise<ApiResponse<Plan>> {
+    return this.request(`/plans/${id}`);
+  }
+
+  async getPartners(params?: any): Promise<ApiResponse<Partner[]>> {
+    const query = params ? `?${new URLSearchParams(params).toString()}` : '';
+    return this.request(`/partners${query}`);
+  }
+
+  async getPartner(id: string): Promise<ApiResponse<Partner>> {
+    return this.request(`/partners/${id}`);
+  }
+
+  async generateQRToken(): Promise<ApiResponse<QRToken>> {
+    return this.request('/checkins/generate-qr', { method: 'POST' });
+  }
+
+  async getCheckIns(): Promise<ApiResponse<CheckIn[]>> {
+    return this.request('/checkins');
+  }
+
+  async getCompanyEmployees(): Promise<ApiResponse<Employee[]>> {
+    return this.request('/company/employees');
+  }
+
+  async inviteEmployee(data: any): Promise<ApiResponse<Employee>> {
+    return this.request('/company/employees/invite', {
+      method: 'POST',
+      body: JSON.stringify(data),
+    });
+  }
+
+  async assignPlan(employeeId: string, planId: string): Promise<ApiResponse<void>> {
+    return this.request(`/company/employees/${employeeId}/assign-plan`, {
+      method: 'POST',
+      body: JSON.stringify({ planId }),
+    });
+  }
+
+  async deactivateEmployee(employeeId: string): Promise<ApiResponse<void>> {
+    return this.request(`/company/employees/${employeeId}/deactivate`, {
+      method: 'POST',
+    });
+  }
+
+  async getCompanyUsage(): Promise<ApiResponse<any>> {
+    return this.request('/company/usage');
+  }
+
+  async getInvoices(): Promise<ApiResponse<Invoice[]>> {
+    return this.request('/company/invoices');
+  }
+
+  async getAllPartners(): Promise<ApiResponse<Partner[]>> {
+    return this.request('/admin/partners');
+  }
+
+  async createPartner(data: any): Promise<ApiResponse<Partner>> {
+    return this.request('/admin/partners', {
+      method: 'POST',
+      body: JSON.stringify(data),
+    });
+  }
+
+  async updatePartnerStatus(id: string, status: string): Promise<ApiResponse<void>> {
+    return this.request(`/admin/partners/${id}/status`, {
+      method: 'PATCH',
+      body: JSON.stringify({ status }),
+    });
+  }
+
+  async getCompanies(): Promise<ApiResponse<Company[]>> {
+    return this.request('/admin/companies');
+  }
+
+  async createCompany(data: any): Promise<ApiResponse<Company>> {
+    return this.request('/admin/companies', {
+      method: 'POST',
+      body: JSON.stringify(data),
+    });
+  }
+
+  async createPlan(data: any): Promise<ApiResponse<Plan>> {
+    return this.request('/admin/plans', {
+      method: 'POST',
+      body: JSON.stringify(data),
+    });
+  }
+
+  async updatePlan(id: string, data: any): Promise<ApiResponse<Plan>> {
+    return this.request(`/admin/plans/${id}`, {
+      method: 'PUT',
+      body: JSON.stringify(data),
+    });
+  }
+
+  async deletePlan(id: string): Promise<ApiResponse<void>> {
+    return this.request(`/admin/plans/${id}`, {
+      method: 'DELETE',
+    });
+  }
+
+  async getAnalytics(): Promise<ApiResponse<Analytics>> {
+    return this.request('/admin/analytics');
+  }
 }
 
 // Export the appropriate API instance
