@@ -30,12 +30,12 @@ export const PublicNav = () => {
   ];
 
   return (
-    <nav className="bg-white shadow-sm border-b">
+    <nav className="sticky top-0 z-50 bg-white/80 backdrop-blur-lg shadow-sm border-b border-gray-200/50 transition-all duration-300">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16">
           <div className="flex items-center">
-            <Link href={`/${locale}`} className="flex items-center">
-              <span className="text-2xl font-bold text-primary-600">HOPn</span>
+            <Link href={`/${locale}`} className="flex items-center group">
+              <span className="text-2xl font-extrabold bg-gradient-to-r from-primary-600 to-purple-600 bg-clip-text text-transparent group-hover:scale-105 transition-transform duration-200">HOPn</span>
             </Link>
             
             {/* Desktop Navigation */}
@@ -44,9 +44,10 @@ export const PublicNav = () => {
                 <Link
                   key={link.href}
                   href={link.href}
-                  className="text-gray-700 hover:text-primary-600 px-3 py-2 text-sm font-medium transition"
+                  className="relative text-gray-700 hover:text-primary-600 px-3 py-2 text-sm font-semibold transition-all duration-200 group"
                 >
                   {link.label}
+                  <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-primary-600 to-purple-600 group-hover:w-full transition-all duration-300"></span>
                 </Link>
               ))}
             </div>
@@ -56,10 +57,10 @@ export const PublicNav = () => {
             {/* Language Toggle */}
             <button
               onClick={switchLocale}
-              className="flex items-center space-x-2 rtl:space-x-reverse text-gray-700 hover:text-primary-600 transition"
+              className="flex items-center space-x-2 rtl:space-x-reverse text-gray-700 hover:text-primary-600 transition-all duration-200 px-3 py-2 rounded-lg hover:bg-primary-50"
             >
               <Globe className="h-5 w-5" />
-              <span className="text-sm font-medium">
+              <span className="text-sm font-semibold">
                 {locale === 'en' ? 'العربية' : 'English'}
               </span>
             </button>
@@ -72,14 +73,14 @@ export const PublicNav = () => {
                 </Button>
               </Link>
               <Link href={`/${locale}/auth/register`}>
-                <Button size="sm">Get Started</Button>
+                <Button size="sm" className="shadow-lg hover:shadow-xl">Get Started</Button>
               </Link>
             </div>
 
             {/* Mobile Menu Button */}
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
-              className="md:hidden text-gray-700"
+              className="md:hidden text-gray-700 hover:text-primary-600 p-2 rounded-lg hover:bg-primary-50 transition-all duration-200"
             >
               {isMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
             </button>
@@ -89,26 +90,26 @@ export const PublicNav = () => {
 
       {/* Mobile Menu */}
       {isMenuOpen && (
-        <div className="md:hidden border-t">
+        <div className="md:hidden border-t border-gray-200 bg-white/95 backdrop-blur-lg animate-fadeInUp">
           <div className="px-2 pt-2 pb-3 space-y-1">
             {navLinks.map((link) => (
               <Link
                 key={link.href}
                 href={link.href}
-                className="block px-3 py-2 text-base font-medium text-gray-700 hover:text-primary-600 hover:bg-gray-50 rounded-md transition"
+                className="block px-4 py-3 text-base font-semibold text-gray-700 hover:text-primary-600 hover:bg-primary-50 rounded-lg transition-all duration-200"
                 onClick={() => setIsMenuOpen(false)}
               >
                 {link.label}
               </Link>
             ))}
-            <div className="pt-4 pb-3 border-t border-gray-200">
+            <div className="pt-4 pb-3 border-t border-gray-200 space-y-2">
               <Link href={`/${locale}/auth/login`} onClick={() => setIsMenuOpen(false)}>
-                <Button variant="ghost" size="sm" className="w-full mb-2">
+                <Button variant="ghost" size="sm" className="w-full">
                   {t('login')}
                 </Button>
               </Link>
               <Link href={`/${locale}/auth/register`} onClick={() => setIsMenuOpen(false)}>
-                <Button size="sm" className="w-full">
+                <Button size="sm" className="w-full shadow-lg">
                   Get Started
                 </Button>
               </Link>
