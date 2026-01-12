@@ -30,7 +30,7 @@ export default function ContactPage() {
             <h2 className="text-2xl font-bold mb-6">Get in Touch</h2>
             {submitted && (
               <div className="mb-4 p-3 bg-green-50 border border-green-200 text-green-700 rounded-md">
-                Thank you! We'll get back to you soon.
+                Thank you! We&apos;ll get back to you soon.
               </div>
             )}
             <form onSubmit={handleSubmit(onSubmit)} className="space-y-4">
