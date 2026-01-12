@@ -734,6 +734,10 @@ class RealAPI {
     return this.request('/admin/companies');
   }
 
+  async getAllCompanies(): Promise<ApiResponse<Company[]>> {
+    return this.request('/admin/companies');
+  }
+
   async createCompany(data: any): Promise<ApiResponse<Company>> {
     return this.request('/admin/companies', {
       method: 'POST',
