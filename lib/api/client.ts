@@ -680,6 +680,10 @@ class RealAPI {
     return this.request('/checkins');
   }
 
+  async getMyCheckIns(): Promise<ApiResponse<CheckIn[]>> {
+    return this.request('/checkins/my');
+  }
+
   async getCompanyEmployees(): Promise<ApiResponse<Employee[]>> {
     return this.request('/company/employees');
   }
@@ -704,11 +708,16 @@ class RealAPI {
     });
   }
 
-  async getCompanyUsage(): Promise<ApiResponse<any>> {
-    return this.request('/company/usage');
+  async getCompanyUsage(params?: any): Promise<ApiResponse<any>> {
+    const query = params ? `?${new URLSearchParams(params).toString()}` : '';
+    return this.request(`/company/usage${query}`);
   }
 
   async getInvoices(): Promise<ApiResponse<Invoice[]>> {
+    return this.request('/company/invoices');
+  }
+
+  async getCompanyInvoices(): Promise<ApiResponse<Invoice[]>> {
     return this.request('/company/invoices');
   }
 
@@ -767,6 +776,10 @@ class RealAPI {
 
   async getAnalytics(): Promise<ApiResponse<Analytics>> {
     return this.request('/admin/analytics');
+  }
+
+  async getAllPlans(): Promise<ApiResponse<Plan[]>> {
+    return this.request('/admin/plans');
   }
 }
 
