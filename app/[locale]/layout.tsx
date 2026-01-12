@@ -4,7 +4,7 @@ import { Inter } from 'next/font/google';
 import { Tajawal } from 'next/font/google';
 import { notFound } from 'next/navigation';
 import { locales } from '@/i18n';
-import './globals.css';
+import '../globals.css';
 
 const inter = Inter({ 
   subsets: ['latin'],
